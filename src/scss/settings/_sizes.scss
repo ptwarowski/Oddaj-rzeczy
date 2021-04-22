@@ -1,0 +1,350 @@
+@media screen and (max-width: 746px) {
+#header {
+        
+        .login__btns{
+            font-size: 30px;
+            height: 40px;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+            margin: 50px 0;
+            p{
+                display: none;
+            }
+            .create__Acc__Btn{
+                margin-right: 0;
+                margin-left: 0;
+            }
+            button {
+                
+                width: auto;
+            }
+            a{
+                font-size: 30px;
+            }
+            button.rise__Btn {
+                border: 1px solid $bgStripe;
+                &:hover{
+                    border: 1px solid $bgStripe; 
+                }
+            }
+            .logout__Btn {
+                color: $textLight
+            }
+        }      
+.header__menu{   
+    div.header__menu__btns{
+        width: 100vw;
+        margin: 0 0 0 0;
+        
+        ul {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 100vh;
+            top:0;
+            padding-top: 200px;
+            background-color: $bgStripe;
+            z-index: 1;
+            text-align: left;
+            
+            .li {
+                
+                width: 250px;
+                background: white;
+                height: auto;
+                
+                a {
+                    width: 100%;
+                    background: white;
+                    height: 100%;
+                    z-index: 1;   
+                    font-size: 36px;
+                    text-align: left;
+                }
+            }
+        }
+        ul.nav{ 
+            position: absolute;  
+            right:-300px;
+            transition: all 0.3s linear;     
+        }
+        ul.nav__Mobile{   
+            position: absolute;  
+            right:-30px;
+            transition: all 0.3s linear;
+            
+            li {
+                width: 250px;
+                
+                height: auto;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;   
+                    font-size: 36px;
+                    text-align: left;
+                }
+            }
+        }
+        .ham{
+            width: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: 50px;
+            div{
+                height: 0.5rem;
+                width: 2.7rem;
+                background-color: $text;
+                margin: 3px 0;
+                z-index: 2;
+                border-radius: 3px;
+                transition: all 0.3s linear;
+                position: relative;
+                transform-origin: 1px;
+                }
+            .open1 {
+                transform: rotate(45deg);
+                }
+            
+            .open2 {
+                opacity: 0;
+            }
+      
+            .open3 {
+                transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+} 
+    
+#manual {
+    height: auto;
+    .manual__columns{
+        height: auto;
+    }
+}
+.main__header {
+        height: 100vh;
+        width: 90vw;
+        margin: auto;
+        h1{
+            font-size: 50px;
+        }
+        button a{
+            font-size: 30px;
+        }
+        &::before{
+            display:none;
+      }
+    }    
+    
+    .aboutUs__img{
+        display:none;
+    }
+
+    #aboutUs div.aboutUs__text{
+        width: 100vw;
+    }
+    #foundations {
+        height: auto;
+        h1{
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 30px;
+            width: 90vw;;
+            }
+        
+        .selection{
+            width:90%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .selection__display{
+            width:90%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+        }
+
+        .selection__display div.org div{
+            p {
+            font-size: 30px;
+            margin-top:20px;
+            text-align: left;
+            }
+            h5{
+            font-size: 40px;
+            }
+        }
+        .selection__display .org p{
+            font-size: 30px;
+            text-align: right;
+            
+        }
+        .option{
+            font-size: 36px;
+            margin-bottom: 30px;  
+            text-align: center;
+            width: auto;
+        }
+    .page__index button{
+        font-size: 30px;
+        }
+    }
+    #contact{
+        height: auto;
+               
+        .contact__text{
+            height: 100%;
+            width: 100vw;
+            justify-content: center;
+            
+            &::before{
+                display: none;
+            }
+            h2{
+            font-size: 50px;
+            margin-bottom: 50px;
+            }
+            .contact__inputs{
+                width: 90vw;
+                flex-direction: column;
+                margin: 0 auto;
+                div p{
+                    margin:25px auto;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            p{
+                margin:25px auto;
+                font-size: 30px;
+                text-align: center;
+            }
+            input{
+                margin:50px auto;
+                font-size: 30px;  
+                height: 30px;
+            }
+            textarea{
+                margin:50px auto;
+                font-size: 30px;  
+                height: 120px;
+                width: 60vw;   
+            }
+            button{
+                font-size: 40px;
+                font-weight: 600;
+                margin: 0 auto;
+                }
+        }
+    }
+    #login__Page, #signup__Page{    
+    .login__Box, .signup__Box{
+            font-size: 30px;
+            .decoration{
+            margin: 50px auto;
+            }   
+            div.inner__Box{
+                width: 80vw;
+                form {
+                width: 80%;
+                text-align: center;
+                p{
+                    text-align: center; 
+                    margin:50px auto;
+                    }
+                input{
+                    font-size: 30px;
+                    width: 80%;
+                    height: 40px;
+                    }
+
+                }
+            
+            }
+            .loginBox__btns{
+                width: 80%;
+                margin: 50px auto;
+                display: flex;
+                justify-content: space-around;
+                button, a{
+                font-size: 30px;
+                }
+            }        
+        }
+    }
+    #signup__Page.inner__Box{
+        margin: 50px auto;
+        p{
+            text-align: center; 
+            margin:50px auto;
+            }
+        input{
+            font-size: 30px;
+            width: 80%;
+            height: 40px;
+            }
+
+    }
+    #form__main{
+        width: 100vw;
+        height: auto;
+        div.form__header{
+            width: 100vw;
+            padding-left:0;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    #form{
+        .form__display{
+            width: 90vw;
+            height: auto;
+            margin: auto;
+        }
+        .form__msg{
+            margin-top: 100px;
+            
+        }
+        .form__display{
+            &::before{
+                display:none;
+            }
+            p{
+                font-size: 30px;
+            }
+            input{
+                font-size: 30px;
+                width: 80%;
+                height: 40px;
+            }
+            label{
+                font-size: 30px;
+                width: auto;
+                input{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .form__4{
+                padding-bottom: 100px;
+            }
+            .form__5, .form__6 h2{
+                margin-top: 100px;
+                height: 100%;
+            }
+        }
+    }
+}

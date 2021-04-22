@@ -1,0 +1,100 @@
+#foundations{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h1{
+        font-size: 38px;
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    .decoration{
+        @include deco;
+        height: 33px;
+        width: 50%;
+    }
+    .selection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 65%;
+        margin: 10px 0 25px 0;
+    }
+    .option {
+        @include btn;
+        width: 200px;
+        height: 80px;
+        font-size: 24px;
+        &:hover {@include border;}
+    }
+    p {
+        width: 50%;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .selection__display{
+        width: 75%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        .page__index{
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        div ~ .org::before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $text;
+            position: absolute;
+            top: -15px;    
+        }
+        .org{
+            width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            
+            h5{
+                font-size: 26px;
+            }
+            p{  
+                font-size: 18px;
+                width: auto;
+                text-align: left;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                text-align: left
+            }
+        }
+        
+        button{
+            @include btn;
+            @include border;
+            height: 50px;
+            width: 40px;
+            font-size: 18px;
+            border-color: transparent;
+            margin: 5px 20px;
+            &:hover{
+                @include border
+            }
+        }
+        
+    
+    }
+    
+}

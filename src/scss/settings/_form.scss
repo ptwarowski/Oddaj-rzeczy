@@ -1,0 +1,354 @@
+
+#form__main{
+    min-height: calc(100vh - 100px);
+    height: auto;
+    
+    width: 50vw;
+    margin-left: auto;
+    &::before{
+        content: "";
+        background: top/cover url(../../assets/Form-Hero-Image.jpg);
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .form__header{
+        width: 90%;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1{
+        line-height: 46px;
+        margin-top: auto;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+        margin:30px auto;
+    }
+    .steps{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        margin: 50px 50px auto;
+        
+        div {
+            position: relative;
+            width: 150px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &::after{
+                content:'';
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                @include border;
+                color: $text;
+                transform:translate(0%, -20%) rotate(45deg) ;
+                
+            }
+            p{
+                margin:0;
+                width: 120px;
+            }
+            
+        }
+        
+    }
+    
+    
+    span{
+        text-align: center;
+        font-size: 25px;
+        
+        
+    }
+    p{
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+.form__msg{
+    color: $stripeText;
+    width: 100vw;
+    height: 180px;
+    background-color: $bgStripe;
+    h1{
+        width: 90%;
+        padding-top: 30px;
+        font-weight: 600;
+        margin: auto;
+   
+    }
+    
+    p{
+        width: 90%;
+        padding: 30px 0; 
+        margin: auto;
+        font-size: 20px;
+    }
+    
+}
+.form__display{
+    width: 50vw;
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    
+    p{
+        margin-left: 50px;
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    h2 {
+        width: 90%;
+        padding: 34px 0; 
+        margin: auto 50px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    h3 {
+        width: 90%;
+        padding: 30px 0; 
+        margin: auto 50px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    h5 {
+        width: 90%;
+        padding: 24px 0; 
+        margin: auto 50px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    &::before{
+        content: "";
+        background: right/cover url(../../assets/Background-Form.jpg);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -50vw;
+        z-index: -1;
+    }
+    
+    input [text] {
+        border: 1px solid transparent;
+        
+    }
+    .form__1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;   
+    }
+    .form__2{
+        display: flex;
+        flex-direction: row;
+        
+        p{
+            padding:10px 0 0 0;
+            font-size: 22px;      
+        }
+    }
+    .form__3{
+        
+        h4{
+            padding:10px 0 10px 50px;
+            font-size: 24px;    
+        }
+
+        .form__for {
+            margin-left: 50px;
+            button  {@include btn;
+                width: auto;
+                height: auto;
+                font-size: 20px;
+                margin: 10px 10px 10px 0;
+                padding: 10px;
+                @include border;
+                
+                &:focus{
+                
+                background: $bgStripe
+                }
+                
+            }
+            
+        }
+        input {
+            margin-top: 10px;
+            border-radius: 0;
+            height: 30px;
+            width: 70%;
+            background-color: transparent;
+            @include border
+        }
+    
+    }
+    .form__4{
+        display: flex;
+        flex-direction: row;
+        .form__place{
+            margin-left: 50px;
+        }
+        p {
+            padding: 10px 0;
+            margin-left: 0;
+        }
+        h5{ 
+            margin-left: 0;
+        }
+        input {
+            margin-right: 50px;
+            border-radius: 0;
+            height: 30px;
+            width: 200px;
+            background-color: transparent;
+            @include border
+        }
+        textarea {
+            
+            border-radius: 0;
+            width: 200px;
+            height: 112px;
+            background-color: transparent;
+            @include border;
+            resize: none;
+        }
+    }
+    .form__5{
+        display: flex;
+        flex-direction: column;
+        margin-left:50px;
+        .form__summary{
+            display: flex;
+            flex-direction: row;
+        }
+        .adress{
+            margin-left: 50px;
+        }
+        h2, h5{ 
+            margin-left: 0;
+        }
+        p {
+            padding:0;
+            margin: 10px 0;
+        }
+    }
+    .form__6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        h2{ 
+            margin: 0 auto;
+            text-align: center;
+            line-height: 36px;
+            font-weight: 300;
+        }
+        
+    }
+}
+
+
+.form__buttons{
+        position: absolute;
+        bottom: 30px;
+        
+        button {
+            @include btn;
+            width: 200px;
+            height: 60px;
+            font-size: 30px;
+            margin-left: 50px;
+            border: 1px solid transparent;
+            &:hover{
+                @include border
+            }
+        
+        }
+    }
+.regular-radio {
+    display: none;
+}
+.regular__radio {
+    -webkit-appearance: none;
+    background-color: $bgLight;
+    @include border;
+    border-radius: 0px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    
+}
+
+.regular__radio:checked {
+    background: $bgStripe;
+    
+}
+label{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    vertical-align:top;
+}
+
+select {
+    width: 150px;
+    height: 40px;
+    padding: 0 .5em;
+    margin-left:50px;
+    cursor: pointer;
+    border: 1px solid $text;
+    border-radius: 0;
+    background: transparent;
+    position: relative;
+  }
+  
+
+
+
+.form__for__input {
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 26px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 0;
+}  
+.err {
+    color: $err
+}
+.form__icons{
+    display: flex;
+    flex-direction: row;
+    .icon__1{
+        background: center / cover url('../../assets/Icon-1.svg');
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .icon__4{
+        background: center / cover url('../../assets/Icon-4.svg');
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+}  
+}

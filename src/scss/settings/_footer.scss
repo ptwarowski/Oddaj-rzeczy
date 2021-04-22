@@ -1,0 +1,27 @@
+#footer{
+    width:100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    font-size:18px;
+    p{
+        position: relative;
+        bottom: -28px;
+        left: 50vw;
+        height: 18px;
+        transform: translate(-50%, 0);
+    }
+    .instagram{
+        height: 30px;
+        width: 30px;
+        background: center / cover url("../../assets/Instagram.svg");
+        margin: 20px;
+        margin-left: auto;
+    }
+    .fb{
+        height: 30px;
+        width: 30px;
+        background: center / cover url("../../assets/Facebook.svg");
+        margin: 20px 50px 20px 0;
+    }
+}

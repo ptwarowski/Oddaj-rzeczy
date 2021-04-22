@@ -1,0 +1,22 @@
+#logOut__Page {
+
+    .logOut__Box, .signup__Box {
+        width: 100vw;
+        height: calc(100vh - 115px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button{
+           font-size: 18px;
+           margin: 10px 20px;
+           padding: 10px 17px;
+           border: 1px solid transparent;
+           &:hover{
+               @include border
+           }
+        }
+        a{font-size: 18px;}
+    
+    }
+}

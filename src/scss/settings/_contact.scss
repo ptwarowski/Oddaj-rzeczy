@@ -1,0 +1,110 @@
+#contact {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    color: $text;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    
+    .contact__text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+        margin-left: auto;
+        &::before{
+            content: '';
+            background: top / cover url("../../assets/Background-Contact-Form.jpg");
+            width: 100vw;
+            height: 100%;
+            opacity: 0.2;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        h2 {
+            font-size: 38px;
+            letter-spacing: -0.76px;
+            margin: 20px 15px 20px 0; 
+        }
+        .decoration {
+        @include deco;
+        height: 33px;
+        width: 92.5%;
+        margin: 10px 15px 10px 0;
+        text-align: center;
+        }
+        .success{
+            @include success;
+        }
+        .err{
+            @include err;
+        }
+        .contact__inputs{
+            width: 92.5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            p { 
+                text-align: left; 
+                font-size: 16px;
+                font-weight: 600;
+                font-size: 18px;
+                margin-left: 15px;
+                }
+            }
+        }
+        p { 
+            width: 92.5%;
+            text-align: left; 
+            font-size: 16px;
+            font-weight: 600;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        input {
+            @include input;
+        }
+        textarea {
+            width: calc(92.5% - 30px);
+            height: 97px;
+            outline: none;
+            border: none;
+            border-bottom: $textLight 1px solid;
+            color: $text;
+            opacity:0.26;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-left: 15px;
+            resize: none;
+        }
+        .input__err, .textArea__err{
+            
+            @include inputErr;
+            
+        }
+        
+        button {
+            
+            @include btn;
+            height: 50px;
+            width: 150px;
+            margin-left: auto;
+            margin-right: 15px;
+            font-size: 24px;
+            padding: 0 23px;
+            &:hover{
+                @include border
+            }
+        }
+    }   
+}

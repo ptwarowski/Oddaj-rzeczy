@@ -1,0 +1,55 @@
+@import "./settings/reset";
+@import "./settings/normalize";
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./settings/mixins";
+@import "./settings/header";
+@import "./settings/threeColumns";
+@import "./settings/nav";
+@import "./settings/login";
+@import "./settings/logOut";
+@import "./settings/aboutUs";
+@import "./settings/form";
+@import "./settings/contact";
+@import "./settings/foundations";
+@import "./settings/manual";
+@import "./settings/footer";
+@import "./settings/sizes";
+
+html {
+    font-family: $font-base;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+}
+#root{
+    overflow-x: hidden;
+    position: relative;
+}
+.dnone {
+    display: none;
+}
+.disabled {
+    opacity: 0.5;
+    
+    &:hover{
+    border: 1px solid transparent;
+     
+    
+    }
+    // &:hover::after{
+    //     content: "Uzupełnij dane";
+    //     color: $err;   
+    //     font-size: 26px; 
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     position: absolute; 
+    //     opacity: 1; 
+    //     bottom:0;
+    //     right:0; 
+    //     width: auto; 
+    //     height: 100%;
+    //     width: 200px;
+    // }
+}

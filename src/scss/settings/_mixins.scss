@@ -1,0 +1,39 @@
+@mixin border{
+    border:0.75px solid $text;
+}
+@mixin deco{
+    color: $text;
+    background: center / contain url('../../assets/Decoration.svg');
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+@mixin signature{
+    color: $text;
+    background: center / contain url('../../assets/Signature.svg');
+    background-repeat: no-repeat;
+}
+@mixin btn{
+    background: none;
+    border: none
+}
+@mixin success{
+    color: $success;
+    text-align: center;
+    margin: 10px 0;
+}
+@mixin err {
+    color: $err;
+    text-align: left;
+    margin-bottom: 10px;
+}
+@mixin input {
+    border: none;
+    border-bottom: $textLight 1px solid;
+    height: 30px;
+    color: $text;
+    opacity:0.26;
+    margin: 10px 15px;
+}
+@mixin inputErr {
+    border-bottom: $err 1px solid;
+}

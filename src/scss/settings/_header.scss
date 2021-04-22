@@ -1,0 +1,155 @@
+#header {
+    
+    width: 100vw;
+    height: auto;
+    color: $text;
+    display: flex;
+    .login__btns{
+        font-size: 13px;
+        height: 40px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        margin-top: 10px;
+        
+        .create__Acc__Btn{
+            margin-right: 20px;
+        }
+        button {
+            margin-left: 20px;
+            width: 110px;
+        }
+        p {
+            line-height: 40px; 
+        } 
+        a{
+            font-size: 13px;
+        }
+        button.rise__Btn {
+            border: 1px solid $bgStripe;
+            &:hover{
+                border: 1px solid $bgStripe; 
+            }
+        }
+        .logout__Btn {
+            color: $textLight
+        }
+    }                                                                                                                                                                                                                                                      
+    
+}
+    
+    
+.header__btns{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button {
+        font-size: 26px;
+        font-weight: 300;
+        width: 310px;
+        height: 120px;
+        margin:0 9px;
+        
+        a{
+            font-size: 26px;
+        }
+    }}
+    
+     
+        
+.main__header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    height: calc(100vh - 100px);
+    width: 50vw;
+    &::before{
+        content:'';
+        background: right/cover url("../../assets/Home-Hero-Image.jpg");
+        width: 50vw;
+        height: 100vh;
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    h1 {
+        font-size: 38px;
+        letter-spacing: -0.76px;
+    }
+    button {
+        @include btn;
+        font-size: 13px;
+        border: transparent 1px solid;
+        &:hover{
+                @include border;  
+            }
+        }
+        
+    }
+.header__menu {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .header__menu__btns{
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: 25px;
+        
+    }
+    
+}
+
+button {
+    @include btn;
+    font-size: 13px;
+    &:hover {
+        @include border;
+    }
+}
+
+ul {
+    
+    margin-right: 20px;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: auto;
+}
+li{
+    margin: 20px 0 0 auto;
+    padding: 9px 20px;
+    height: 40px;
+    border: transparent 1px solid;
+    cursor: pointer;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    &:hover {
+        @include border;
+    }
+}
+a { 
+    font-size: 18px;
+    color: $text;
+    text-decoration: none;
+        
+    
+}
+.decoration {
+    height: 33px;
+    width: 100%;
+    @include deco; 
+    margin-right: 0;
+    margin-left: 0;
+}
