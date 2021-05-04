@@ -9,7 +9,7 @@ const history = useHistory();
 const [err, setErr] = useState({1:false,2:false,3:false});
 
 const [data, setData] = useState({email:'', password:''});
-
+//eslint-disable-next-line
 const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
 const checkLogin =(user, auth) => {
@@ -19,11 +19,11 @@ const checkLogin =(user, auth) => {
     let password=data.password;
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-    var user = userCredential.user;
+    
     })
     .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
+    
+    
     setErr(p=>({...p, 3:true}));
     });
     Array.from(document.querySelectorAll("input")).forEach(input => (input.value = ""));

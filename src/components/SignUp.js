@@ -9,7 +9,7 @@ export const SignUp = () => {
 
 const [err, setErr] = useState({1:false,2:false,3:false,4:false});
 
-
+//eslint-disable-next-line
 const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 const [data, setData] = useState({email:'', password:''});
 

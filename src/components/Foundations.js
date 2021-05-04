@@ -9,11 +9,151 @@ const [page,setPage] = useState(0);
 
 const foundations=[
 
-    [[["Fundacja “Dbam o Zdrowie”", "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.", "ubrania, jedzenie, sprzęt AGD, meble, zabawki"],["Fundacja “Dla dzieci”", "Cel i misja: Pomoc dzieciom z ubogich rodzin.", "ubrania, meble, zabawki"],["Fundacja “Bez domu”", "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.", "ubrania, jedzenie, ciepłe koce"]],[["Fundacja 4", "lorem", "Egastas"],["Fundacja 5", "lorem", "Egastas"],["Fundacja 6", "lorem", "Egastas"]],[["Fundacja 7", "lorem", "Egastas"]]], 
+    [
+        [
+            {
+                id:1,
+                name:"Fundacja “Dbam o Zdrowie”", 
+                mission:"Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.", 
+                items:"ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+            },
+            {
+                id:2,
+                name:"Fundacja “Dla dzieci”", 
+                mission:"Cel i misja: Pomoc dzieciom z ubogich rodzin.", 
+                items:"ubrania, meble, zabawki"
+            },
+            {
+                id:3,
+                name:"Fundacja “Bez domu”", 
+                mission:"Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.", 
+                items:"ubrania, jedzenie, ciepłe koce"
+            }
+        ],
+        [
+            {
+                id:4,
+                name:"Fundacja 4", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:5,
+                name:"Fundacja 5", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:6,
+                name:"Fundacja 6", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ],
+        [
+            {
+                id:7,
+                name:"Fundacja 7", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ]
+    ], 
     
-    [[["Organizacja 1", "lorem", "Egastas"],["Organizacja 2", "lorem", "Egastas"],["Organizacja 3", "lorem", "Egastas"]],[["Organizacja 4", "lorem", "Egastas"],["Organizacja 5", "lorem", "Egastas"],["Organizacja 6", "lorem", "Egastas"]]], 
+    [
+        [
+            {
+                id:8,
+                name:"Organizacja 1", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:9,
+                name:"Organizacja 2", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:10,
+                name:"Organizacja 3", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ],
+        [
+            {
+                id:11,
+                name:"Organizacja 4", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:12,
+                name:"Organizacja 5", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:13,
+                name:"Organizacja 6", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ]
+    ], 
     
-    [[["Zbiórka 1", "lorem", "Egastas"],["Zbiórka 2", "lorem", "Egastas"],["Zbiórka 3", "lorem", "Egastas"]],[["Zbiórka 4", "lorem", "Egastas"],["Zbiórka 5", "lorem", "Egastas"],["Zbiórka 6", "lorem", "Egastas"]],[["Zbiórka 7", "lorem", "Egastas"]]]]
+    [
+        [
+            {
+                id:14,
+                name:"Zbiórka 1", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:15,
+                name:"Zbiórka 2", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:16,
+                name:"Zbiórka 3", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ],
+        [
+            {
+                id:17,
+                name:"Zbiórka 4", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:18,
+                name:"Zbiórka 5", 
+                mission:"lorem", 
+                items:"Egastas"
+            },
+            {
+                id:19,
+                name:"Zbiórka 6", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ],
+        [
+            {
+                id:20,
+                name:"Zbiórka 7", 
+                mission:"lorem", 
+                items:"Egastas"
+            }
+        ]
+    ]
+]
     
 
 pages = [];
@@ -38,7 +178,7 @@ return (
             <div className='selection__display'>
                 {Display(option, page, foundations)}
                 <div className='page__index'>
-                {pages.map((item)=><button key={item} onClick={()=>setPage(item)}>{item+1}</button>)}
+                {pages.map((item, index)=><button key={index} onClick={()=>setPage(item)}>{item+1}</button>)}
         </div>
             </div>
         </section>

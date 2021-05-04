@@ -6,6 +6,7 @@ export const Contact = () => {
     const [err, setErr] = useState({1:false,2:false,3:false});
     const [success, setSuccess] = useState(false)
     
+    //eslint-disable-next-line
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     
     const onNameChange= (e) => {

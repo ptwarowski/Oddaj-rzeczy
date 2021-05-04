@@ -72,12 +72,14 @@
             p{  
                 font-size: 18px;
                 width: auto;
-                text-align: left;
+                text-align: right;
             }
             div{
                 display: flex;
                 flex-direction: column;
-                text-align: left
+                p{
+                    text-align: left
+                }
             }
         }
         

@@ -4,6 +4,7 @@ import 'firebase/firestore';
 const db=firebase.firestore();
 
 export const FormDisplay = () =>{
+    //eslint-disable-next-line
     const [change, setChange]=useState(false)
     
     const [page, setPage] = useState(1);
@@ -78,7 +79,7 @@ export const FormDisplay = () =>{
                     <form className="form__2">
                             <p>Liczba 60l worków:</p>
                             <select onChange={e=>setFormData(p=>({...p, bags:e.target.value}))}>
-                                <option value={0} selected>-wybierz-</option>
+                                <option value={0} defaultValue>-wybierz-</option>
                                 <option value={1}>1</option>
                                 <option value={2}>2</option>
                                 <option value={3}>3</option>
